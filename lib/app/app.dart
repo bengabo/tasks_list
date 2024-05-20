@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tasks_list/app/view/home.dart';
 import 'package:tasks_list/app/view/splash.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: SplashPage(),
+      home: const SplashPage(),
     );
   }
 }

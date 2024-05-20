@@ -1,28 +1,29 @@
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
+  const SplashPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
+          children: [
             Text('Demain le monde'),
-            Text("Fort comme l'oiseau"),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text('Demain moi'),
-                Text("Fort comme une branche"),
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                 Text('Assets'),
+                 Text('Images'),
               ],
             ),
-            Container(
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(color: Colors.amber),
-            )
+            // Container(
+            //   width: 200,
+            //   height: 100,
+            //   decoration: const BoxDecoration(color: Colors.orange),
+            // ),
           ],
         ),
       ),
